@@ -25,11 +25,11 @@ select * from productos where descripcion is null
  --1. Crear un select que traiga el nombre y la cedula de los estudiantes
  select nombre,cedula from estudiantes 
  
- --Crear un select que traiga los nombre de todos los estudiantes que sean de noveno
- select nombre from estudiantes where curso='9' --No existe el campo curso o nivel
+ --Crear un select que traiga los nombre de todos los estudiantes cuya cedula empieze con 17
+ select nombre from estudiantes where cedula like '17%'
  
- --Crear un select que traiga los nombres completos de todos los estudiantes que
- select nombre,apellido from estudiantes where --el ejerciso no explica la condicion final
+ --Crear un select que traiga los nombres completos de todos los estudiante cuyo nombre empieze con A
+ select nombre,apellido from estudiantes where nombre like 'A%'
  
  ----------------------------------------------------------
  --OPERACIONES CON LA TABLA REGISTRO DE ENTRADA--
@@ -54,7 +54,7 @@ select * from productos where descripcion is null
    select * from videojuegos where descripcion is  null
 
  ----------------------------------------------------------
---OPERACIONES CON LA TABLA REGISTRO VIDEOJUEGOS--
+--OPERACIONES CON LA TABLA TRANSACCIONES--
  --1. Seleccionar todas las transacciones realizadas con un tipo D
  select * from transacciones where tipo='D'
  
