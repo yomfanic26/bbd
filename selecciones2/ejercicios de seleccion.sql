@@ -23,7 +23,7 @@ select nombre,apellido from estudiantes where (nombre like 'M%') or (apellido li
 select nombre from estudiantes where (cedula like '%32%') and (cedula like '%18')
 --3. Crear un select que traiga los nombres completos de todos los estudiantes cuya 
 --cedula termine en 06 o empiece con 17
-select nombre,apellido from estudiantes where (cedula like '%6') or (cedula like '17%')
+select nombre,apellido from estudiantes where (cedula like '%06') or (cedula like '17%')
 
 
 --REGISTROS-ENTRADA--
