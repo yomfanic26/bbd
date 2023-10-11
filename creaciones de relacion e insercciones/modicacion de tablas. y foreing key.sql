@@ -107,7 +107,7 @@ create table plataformas (
 	codigo_videojuego int not null,
 	constraint 	plataforma_pk primary key (id_plataforma ),
 
-	constraint 	plataforma_videojuego_fk foreign key (codigo_videojuego) references productos (codigo)
+	constraint 	plataforma_videojuego_fk foreign key (codigo_videojuego) references videojuegos(codigo)
 )
 
 --TABLA COLEGIO
